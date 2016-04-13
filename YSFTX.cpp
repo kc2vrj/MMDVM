@@ -37,7 +37,7 @@ q15_t YSF_D[] = {-997, -997, -997, -997, -997, -997, -997, -997, -997, -997};
 
 
 CYSFTX::CYSFTX() :
-m_buffer(),
+m_buffer(1500U),
 m_modFilter(),
 m_modState(),
 m_poBuffer(),
