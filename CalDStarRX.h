@@ -1,5 +1,5 @@
 /*
- *   Copyright (C) 2015 by Jonathan Naylor G4KLX
+ *   Copyright (C) 2015,2016 by Jonathan Naylor G4KLX
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -16,15 +16,15 @@
  *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#if !defined(CALRX_H)
-#define  CALRX_H
+#if !defined(CALDSTARRX_H)
+#define  CALDSTARRX_H
 
 #include "Config.h"
 #include "DStarDefines.h"
 
-class CCalRX {
+class CCalDStarRX {
 public:
-  CCalRX();
+  CCalDStarRX();
 
   void samples(const q15_t* samples, uint8_t length);
 

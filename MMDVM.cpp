@@ -44,8 +44,9 @@ CDMRTX     dmrTX;
 CYSFRX     ysfRX;
 CYSFTX     ysfTX;
 
-CCalRX     calRX;
-CCalTX     calTX;
+CCalDStarRX calDStarRX;
+CCalDStarTX calDStarTX;
+CCalDMR     calDMR;
 
 CSerialPort serial;
 CIO io;
@@ -71,8 +72,11 @@ void loop()
   if (m_ysfEnable && m_modemState == STATE_YSF)
     ysfTX.process();
 
-  if (m_modemState == STATE_CALIBRATE)
-    calTX.process();
+  if (m_modemState == STATE_DSTARCAL)
+    calDStarTX.process();
+
+  if (m_modemState == STATE_DMRCAL)
+    calDMR.process();
 }
 
 int main()

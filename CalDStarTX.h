@@ -1,5 +1,5 @@
 /*
- *   Copyright (C) 2015 by Jonathan Naylor G4KLX
+ *   Copyright (C) 2015,2016 by Jonathan Naylor G4KLX
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -16,15 +16,15 @@
  *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#if !defined(CALTX_H)
-#define  CALTX_H
+#if !defined(CALDSTARTX_H)
+#define  CALDSTARTX_H
 
 #include "Config.h"
 #include "DStarDefines.h"
 
-class CCalTX {
+class CCalDStarTX {
 public:
-  CCalTX();
+  CCalDStarTX();
 
   uint8_t write(const uint8_t* data, uint8_t length);
 

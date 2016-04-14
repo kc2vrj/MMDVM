@@ -1,5 +1,6 @@
 /*
  *   Copyright (C) 2009-2016 by Jonathan Naylor G4KLX
+ *   Copyright (C) 2016 by Colin Durbridge G4EML
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -202,8 +203,6 @@ void CDMRTX::setCal(bool start)
 
   m_count = 0U;
 }
-
-
 
 void CDMRTX::writeByte(uint8_t c, uint8_t control)
 {

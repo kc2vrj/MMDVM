@@ -1,5 +1,6 @@
 /*
  *   Copyright (C) 2009-2015 by Jonathan Naylor G4KLX
+ *   Copyright (C) 2016 by Colin Durbridge G4EML
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -25,12 +26,14 @@
 class CCalDMR {
 public:
   CCalDMR();
+
   void process();
+
   uint8_t write(const uint8_t* data, uint8_t length);
 
 private:
-  bool      m_transmit;
-
+  bool m_transmit;
 };
 
 #endif
+

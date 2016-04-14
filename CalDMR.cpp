@@ -1,5 +1,6 @@
 /*
  *   Copyright (C) 2009-2015 by Jonathan Naylor G4KLX
+ *   Copyright (C) 2016 by Colin Durbridge G4EML
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -26,22 +27,15 @@ m_transmit(false)
 {
 }
 
-
 void CCalDMR::process()
 {
- if (m_transmit)
-  {
-  dmrTX.setCal(true);
-  dmrTX.process();
+  if (m_transmit) {
+    dmrTX.setCal(true);
+    dmrTX.process();
+  } else {
+    dmrTX.setCal(false);
   }
- else
-  {
-  dmrTX.setCal(false);
-  return;
-  }
-
 }
-
 
 uint8_t CCalDMR::write(const uint8_t* data, uint8_t length)
 {
@@ -49,7 +43,7 @@ uint8_t CCalDMR::write(const uint8_t* data, uint8_t length)
     return 4U;
 
   m_transmit = data[0U] == 1U;
+
   return 0U;
 }
- 
 
