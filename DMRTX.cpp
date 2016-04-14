@@ -101,7 +101,7 @@ void CDMRTX::process()
       case DMRTXSTATE_CAL:
         createCal();
         break;
-        
+
       default:
         createCACH(0U, 1U);
         m_state = DMRTXSTATE_SLOT1;
@@ -292,11 +292,11 @@ void CDMRTX::createData(uint8_t slotIndex)
 
 void CDMRTX::createCal()
 {
-    for (unsigned int i = 0U; i < DMR_FRAME_LENGTH_BYTES; i++) {
-      m_poBuffer[i]   = 0x5F;             //+3+3-3-3 pattern for deviation cal. 
-      m_markBuffer[i] = MARK_NONE;
-    }
-    
+  for (unsigned int i = 0U; i < DMR_FRAME_LENGTH_BYTES; i++) {
+    m_poBuffer[i]   = 0x5FU;              // +3, +3, -3, -3 pattern for deviation cal.
+    m_markBuffer[i] = MARK_NONE;
+  }
+
   m_poLen = DMR_FRAME_LENGTH_BYTES;
   m_poPtr = 0U;
 }

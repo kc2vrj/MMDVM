@@ -294,13 +294,13 @@ void CSerialPort::setMode(MMDVM_STATE modemState)
       dstarRX.reset();
       ysfRX.reset();
       break;
-   case STATE_DMRCAL:
+    case STATE_DMRCAL:
       DEBUG1("Mode set to DMR Calibrate");
       dmrIdleRX.reset();
       dmrRX.reset();
       dstarRX.reset();
       ysfRX.reset();
-      break;      
+      break;
     default:
       DEBUG1("Mode set to Idle");
       // STATE_IDLE
@@ -386,7 +386,7 @@ void CSerialPort::process()
             if (m_modemState == STATE_DSTARCAL)
               err = calDStarTX.write(m_buffer + 3U, m_len - 3U);
             if (m_modemState == STATE_DMRCAL)
-              err= calDMR.write(m_buffer +3U,m_len -3U);
+              err = calDMR.write(m_buffer + 3U, m_len - 3U);
             if (err == 0U) {
               sendACK();
             } else {

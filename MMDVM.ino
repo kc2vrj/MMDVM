@@ -1,5 +1,6 @@
 /*
  *   Copyright (C) 2015,2016 by Jonathan Naylor G4KLX
+ *   Copyright (C) 2016 by Colin Durbridge G4EML
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -71,7 +72,7 @@ void loop()
 
   if (m_modemState == STATE_DSTARCAL)
     calDStarTX.process();
-    
+
   if (m_modemState == STATE_DMRCAL)
     calDMR.process();
 }
