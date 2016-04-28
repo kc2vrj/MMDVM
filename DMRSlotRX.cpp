@@ -103,7 +103,7 @@ bool CDMRSlotRX::processSample(q15_t sample)
     m_bitBuffer[m_bitPtr] |= 0x01U;
 
   if (m_state == DMRRXS_NONE) {
-    if (m_dataPtr >= 830U && m_dataPtr <= 910U)
+    if (m_dataPtr >= 790U && m_dataPtr <= 920U)
       correlateSync(true);
   } else {
     uint16_t min = m_syncPtr - 1U;
