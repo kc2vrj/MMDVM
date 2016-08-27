@@ -61,15 +61,15 @@ do
     --------------------------------------------------------------
     Please enter your choice:
 
-    (1) Enable 12.0 MHZ Clock
-    (2) Enable 14.4 MHz Clock
-    (3) Enable 19.2 MHz Clock
-    (4) Use the COS to lockout the modem
-    (5) Use pins to output the current mode
-    (6) wider C4FSK filters for DMR and System Fusion on TX
-    (7) wider C4FSK filters for DMR and System Fusion on RX
-    (8)
-    (9) Use layout for the PAPA board
+    (1)  Enable 12.0 MHZ Clock
+    (2)  Enable 14.4 MHz Clock
+    (3)  Enable 19.2 MHz Clock
+    (4)  Use the COS to lockout the modem
+    (5)  Use pins to output the current mode
+    (6)  wider C4FSK filters for DMR and System Fusion on TX
+    (7)  wider C4FSK filters for DMR and System Fusion on RX
+    (8)  Enable RSSI
+    (9)  Use layout for the PAPA board
     (10) Use layout for ZUM board V1.0
     (11) Use layout for SP8NTH board
     (12) Return to Default
